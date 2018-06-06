@@ -10,11 +10,11 @@
   <title>PRO</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="{{ url_for('static', filename='bootstrap4/css/bootstrap.min.css')}}" rel="stylesheet">
+  <link href="bootstrap4/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="{{ url_for('static', filename='css/album.css')}}" rel="stylesheet">
-  <link href="{{ url_for('static', filename='css/cover.css')}}" rel="stylesheet">
+  <link href="css/album.css" rel="stylesheet">
+  <link href="css/cover.css" rel="stylesheet">
 </head>
 
 <body>
@@ -74,8 +74,8 @@
 
     <div class="album py-5 bg-light">
       <div class="container">
-        <div class="row thumbnail-sortable">
 
+        <div class="row">
           <div class="col-md-4">
             <div class="card mb-4 box-shadow">
               <div class="card-body">
@@ -92,7 +92,6 @@
               </div>
             </div>
           </div>
-
           <div class="col-md-4">
             <div class="card mb-4 box-shadow">
               <div class="card-body">
@@ -109,7 +108,6 @@
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>
@@ -129,17 +127,10 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script>window.jQuery</script>
-    <script src="{{ url_for('static', filename='bootstrap4/js/bootstrap.min.js')}}"></script>
-    <script src="{{ url_for('static', filename='assets/jquery.sortable.js')}}"></script>
-    <script>
-      $('.list-group-sortable').sortable({
-        placeholderClass: 'list-group-item'
-      });
-      $('.thumbnail-sortable').sortable({
-        placeholderClass: 'col-md-4'
-      });
-    </script>
+    <script src="assets/js/vendor/popper.min.js"></script>
+    <script src="bootstrap4/js/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/holder.min.js"></script>
   </body>
   </html>
