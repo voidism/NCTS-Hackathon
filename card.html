@@ -1,4 +1,9 @@
 <!doctype html>
+<style type="text/css">
+#exampleFormControlTextarea1::-webkit-input-placeholder, textarea::-webkit-input-placeholder { 
+  color: #130202; 
+} 
+</style>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -65,18 +70,13 @@
                 <h6 class="text-primary">BED: 23C19 ID: 9487 20yr/m</h6>
               </div>
               <div class="card-body">
-                  <!-- <p class="text-muted">
-                    A 20-year-old, single, Taiwanese male, who worked as a mechanic in a bicycle factory, presented with fever off and on for 4 days.
-                    Two days before admission, left-sided chest pain following deep breathing presented.
-                    Oxacillin was given initially and then later vancomycin due to positive findings of methicillin-resistant staphylococcus aureus (MRSA) cultured from peri-proctal abscess and blood.
-                  </p> -->
-                  <label for="exampleFormControlTextarea1" class="text-primary">Subjective</label>
-                  <textarea class="form-control text-left" id="exampleFormControlTextarea1" rows="2" placeholder="Patient has no complaints overnight."></textarea>
-                  <label for="exampleFormControlTextarea1" class="text-primary">Objective</label>
+                  <label for="exampleFormControlTextarea1" id ="good" class="text-primary">Subjective</label>
+                  <textarea class="form-control text-left" id="exampleFormControlTextarea1" rows="2" placeholder="Patient has no complaints overnight." onfocus="this.style.color='#000'; this.value='';" style="color: #f00;"></textarea>
+                  <label for="exampleFormControlTextarea1" id ="good" class="text-primary">Objective</label>
                   <textarea class="form-control text-left" id="exampleFormControlTextarea1" rows="1" placeholder="WBC 17800/mcl"></textarea>
-                  <label for="exampleFormControlTextarea1" class="text-primary">Assessment</label>
+                  <label for="exampleFormControlTextarea1" id ="good" class="text-primary">Assessment</label>
                   <textarea class="form-control text-left" id="exampleFormControlTextarea1" rows="4" placeholder="pleural-based nodules (black arrow), relatively well-defined margins and a variable degree of cavitation."></textarea>
-                  <label for="exampleFormControlTextarea1" class="text-primary">Planning</label>
+                  <label for="exampleFormControlTextarea1" id ="good" class="text-primary">Planning</label>
                   <textarea class="form-control text-left" id="exampleFormControlTextarea1" rows="2" placeholder="Vancomycin, full course 2 weeks (3/14)"></textarea>
 
               </div>
