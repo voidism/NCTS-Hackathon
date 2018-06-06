@@ -4,6 +4,10 @@
   --tasks-padding-y: 2rem;
 }
 
+::-webkit-input-placeholder { /* WebKit browsers */ 
+color: #999; 
+}
+
 .jumbotron {
   padding-top: var(--jumbotron-padding-y);
   padding-bottom: var(--jumbotron-padding-y);
