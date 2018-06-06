@@ -4,10 +4,9 @@
   --tasks-padding-y: 2rem;
 }
 
-::-webkit-input-placeholder { /* WebKit browsers */ 
-color: #1d0202; 
-}
-:-ms-input-placeholder { color: #f00; }
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { 
+  color: #ee2e2e; 
+  } 
 
 
 .jumbotron {
