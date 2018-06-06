@@ -7,6 +7,8 @@
 ::-webkit-input-placeholder { /* WebKit browsers */ 
 color: #1d0202; 
 }
+:-ms-input-placeholder { color: #f00; }
+
 
 .jumbotron {
   padding-top: var(--jumbotron-padding-y);
