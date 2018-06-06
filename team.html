@@ -7,7 +7,7 @@
   <meta name="author" content="">
   <link rel="icon" href="favicon.ico">
 
-  <title>Album example for Bootstrap</title>
+  <title>PRO</title>
 
   <!-- Bootstrap core CSS -->
   <link href="bootstrap4/css/bootstrap.min.css" rel="stylesheet">
@@ -80,6 +80,20 @@
             </div>
             <span class="badge badge-warning badge-pill">1st Line</span>
             </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+                <a href="card.html" class="btn btn-sm btn-outline-secondary">Junior R</a>
+                <a href="#" class="btn btn-sm btn-outline-primary">Dora Tseng</a>
+            </div>
+            <span class="badge badge-light badge-pill">Offline</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+                <a href="card.html" class="btn btn-sm btn-outline-secondary">Junior R</a>
+                <a href="#" class="btn btn-sm btn-outline-primary">Mina Chen</a>
+            </div>
+            <span class="badge badge-light badge-pill">Offline</span>
+            </li>
         </ul>
       </div>
 
@@ -87,7 +101,7 @@
     <div class="album py-5 bg-light">
       <div class="container">
 
-        <div class="row">
+        <div class="row thumbnail-sortable">
           <div class="col-md-4">
             <div class="card mb-4 box-shadow">
               <div class="card-body">
@@ -171,10 +185,17 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script>window.jQuery</script>
-    <script src="assets/js/vendor/popper.min.js"></script>
     <script src="bootstrap4/js/bootstrap.min.js"></script>
-    <script src="assets/js/vendor/holder.min.js"></script>
+    <script src="assets/jquery.sortable.js"></script>
+    <script>
+      $('.list-group-sortable').sortable({
+        placeholderClass: 'list-group-item'
+      });
+      $('.thumbnail-sortable').sortable({
+        placeholderClass: 'col-md-4'
+      });
+    </script>
   </body>
   </html>
