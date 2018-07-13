@@ -3,6 +3,16 @@
 #exampleFormControlTextarea1::-webkit-input-placeholder, textarea::-webkit-input-placeholder { 
   color: #130202; 
 } 
+table {
+    width: 100%;
+}
+th.fixed {
+    width: 20%;
+}
+
+td.others {
+    width: 80%;
+}
 </style>
 <html lang="en">
 <head>
@@ -70,6 +80,34 @@
                 <h6 class="text-primary">BED: 23C19 ID: 9487 20yr/m</h6>
               </div>
               <div class="card-body">
+                  <table class="table">
+                      <tbody>
+                        <tr>
+                          <th class="fixed" scope="row"><label for="exampleFormControlTextarea1" id ="good" class="text-primary">S</label></th>
+                          <td class="others"><textarea style="background-color:rgb(180, 212, 255);" class="form-control text-left" id="exampleFormControlTextarea1" rows="3" placeholder="Patient has no complaints overnight." onfocus="this.style.color='#000'; this.value='';" style="color: #f00;"></textarea></td>
+                        </tr>
+                        <tr>
+                          <th class="fixed" scope="row"><label for="exampleFormControlTextarea1" id ="good" class="text-primary">O</label></th>
+                          <td class="others"><textarea style="background-color:rgb(180, 212, 255);" class="form-control text-left" id="exampleFormControlTextarea1" rows="1" placeholder="WBC 17800/mcl"></textarea></td>
+                        </tr>
+                        <tr>
+                          <th class="fixed" scope="row"><label for="exampleFormControlTextarea1" id ="good" class="text-primary">A</label></th>
+                          <td class="others"><textarea style="background-color:rgb(180, 212, 255);" class="form-control text-left" id="exampleFormControlTextarea1" rows="3" placeholder="pleural-based nodules (black arrow)."></textarea></td>
+                        </tr>
+                        <tr>
+                            <th class="fixed" scope="row"><label for="exampleFormControlTextarea1" id ="good" class="text-primary">P</label></th>
+                            <td class="others"><textarea style="background-color:rgb(180, 212, 255);" class="form-control text-left" id="exampleFormControlTextarea1" rows="3" placeholder="Vancomycin, full course 2 weeks (3/14)"></textarea></td>
+                          </tr>
+                      </tbody>
+                    </table>
+
+
+
+
+
+
+
+<!--
                   <label for="exampleFormControlTextarea1" id ="good" class="text-primary">Subjective</label>
                   <textarea style="background-color:rgb(180, 212, 255);" class="form-control text-left" id="exampleFormControlTextarea1" rows="2" placeholder="Patient has no complaints overnight." onfocus="this.style.color='#000'; this.value='';" style="color: #f00;"></textarea>
                   <label for="exampleFormControlTextarea1" id ="good" class="text-primary">Objective</label>
@@ -78,27 +116,23 @@
                   <textarea style="background-color:rgb(180, 212, 255);" class="form-control text-left" id="exampleFormControlTextarea1" rows="4" placeholder="pleural-based nodules (black arrow), relatively well-defined margins and a variable degree of cavitation."></textarea>
                   <label for="exampleFormControlTextarea1" id ="good" class="text-primary">Planning</label>
                   <textarea style="background-color:rgb(180, 212, 255);" class="form-control text-left" id="exampleFormControlTextarea1" rows="2" placeholder="Vancomycin, full course 2 weeks (3/14)"></textarea>
-
+ -->
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <h5>Vitals</h5>
-            <p><button type="button" class="btn btn-warning btn-sm">Ventilator <span class="badge badge-pill badge-light">5/1</span></button>
-              <button type="button" class="btn btn-primary btn-sm">CVP <span class="badge badge-pill badge-light">4/30</span></button>
-              <button type="button" class="btn btn-primary btn-sm">A-Line <span class="badge badge-pill badge-light">4/31</span></button></p>
+            
               <div class="list-group text-left list-group-sortable">
-
                 <a href="#" class="list-group-item list-group-item-action list-group-item-danger">WBC: <span class="badge badge-pill badge-danger">17800/mcL</span></a>
                 <a href="#" class="list-group-item list-group-item-action list-group-item-danger">CRP: <span class="badge badge-pill badge-danger">11.58 g/dL</span></a>
                 <a href="#" class="list-group-item list-group-item-action list-group-item-warning">ABG: pH <span class="badge badge-pill badge-warning">7.5</span>; 
                   PaCO2<span class="badge badge-pill badge-warning">29.7 mmHg</span>; 
                   PaO2<span class="badge badge-pill badge-warning">82.1 mmHg</span>
                 </a>
-
-                <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">HR: <span class="badge badge-pill badge-secondary">11.58 g/dL</span></a>
-                <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">BP: <span class="badge badge-pill badge-secondary">2.98 g/dL</span></a>
-                <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">BT: <span class="badge badge-pill badge-secondary">7.53 g/dL</span></a>
+                <a href="#"  class="list-group-item list-group-item-action list-group-item-secondary">Ventilator <span class="badge badge-pill badge-light">5/1</span></a>
+                <a href="#"  class="list-group-item list-group-item-action list-group-item-secondary">CVP <span class="badge badge-pill badge-light">4/30</span></a>
+                <a href="#"  class="list-group-item list-group-item-action list-group-item-secondary">A-Line <span class="badge badge-pill badge-light">4/31</span></a>
               </div>
             </div>
             <div class="col-md-4">
